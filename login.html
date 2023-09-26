@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <link rel="stylesheet" href="login.css">
+
+   
+    <title>Login</title>
+</head>
+
+<body>
+
+
+
+
+
+    <header class="showcase">
+
+
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+
+        <div class="showcase-content">
+            <div class="formm">
+                <form action="/movies/login.php" method="post" name="loginform">
+                    <h1>Login In</h1>
+                    <div class="info">
+                        <input class="email" type="text" name="username" id="username" placeholder="Username"> <br>
+                        <input class="email" type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="btn">
+                        <button class="btn-primary" type="submit">Log-In</button>
+                    </div>
+                    <div class="help">
+                        <div>
+                            <input value="true" type="checkbox"><label>Remember me</label>
+                        </div>
+
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <div class="signup">
+                <p>New to APCOINX</p>
+                <a href="/movies/signup.php">Sign up now</a>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </header>
+
+
+    <script>
+    function validateForm() {
+        var x = document.forms["loginform"]["username"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+    </script>
+
+
+
+
+</body>
+
+</html>
